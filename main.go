@@ -5,23 +5,25 @@ import (
 	"time"
 )
 
+const numberOfFridays = 10
+
 func main() {
 	todayDate := time.Now()
-	dayOfWeekNumber := int(todayDate.Weekday())
-	
-	daysToFriday := 5 - dayOfWeekNumber
-
-	if daysToFriday < 0 {
-		daysToFriday += 7
-	}
-
-	startingFriday := todayDate.AddDate(0, 0, daysToFriday)
+	startingFriday := getNextFriday(todayDate)
 
 	fmt.Println("Starting Friday: ", startingFriday.Format("2006-01-02"))
 
-	printFridays(startingFriday, 10)
+	printFridays(startingFriday, numberOfFridays)
 }
 
+func getNextFriday(date time.Time) time.Time {
+	for {
+		date = date.AddDate(0, 0, 1)
+		if date.Weekday() == time.Friday {
+			return date
+		}
+	}
+}
 
 func printFridays(startingFriday time.Time, count int) {
 	counter := 0
