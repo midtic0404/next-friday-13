@@ -1,0 +1,18 @@
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+next-friday-13
+
+# Go test artifacts
+*.test
+*.out
+
+# Ignore vendor directories
+vendor/
+
+# Ignore config files with sensitive information
+config.json
