@@ -20,9 +20,8 @@ Suppose today's date is March 18, 2023 (Saturday). Running the program will firs
 For example, if we set `numberOfFridays` to 5, the program will output:
 
 
-
-Starting Friday: Mar 24, 2023
 ```
+Starting Friday: Mar 24, 2023
 Oct 13, 2023
 Sep 13, 2024
 Dec 13, 2024
