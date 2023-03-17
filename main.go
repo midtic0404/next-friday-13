@@ -11,7 +11,7 @@ func main() {
 	todayDate := time.Now()
 	startingFriday := getNextFriday(todayDate)
 
-	fmt.Println("Starting Friday: ", startingFriday.Format("2006-01-02"))
+	fmt.Println("Starting Friday: ", startingFriday.Format("Jan 2, 2006"))
 
 	printFridays(startingFriday, numberOfFridays)
 }
