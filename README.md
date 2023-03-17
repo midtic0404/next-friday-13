@@ -22,11 +22,13 @@ For example, if we set `numberOfFridays` to 5, the program will output:
 
 
 Starting Friday: Mar 24, 2023
+```
 Oct 13, 2023
 Sep 13, 2024
 Dec 13, 2024
 Jun 13, 2025
 Feb 13, 2026
+```
 
 
 In this example, the program identifies the next Friday as March 24, 2023, and then proceeds to print the next 5 Friday the 13ths.
