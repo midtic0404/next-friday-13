@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"io"
 	"os"
 	"testing"
 	"time"
@@ -51,7 +51,7 @@ func TestPrintFridays(t *testing.T) {
 
 		w.Close()
 
-		actualOutput, _ := ioutil.ReadAll(r)
+		actualOutput, _ := io.ReadAll(r)
 		result := string(actualOutput)
 
 		if result != cases.expectedOutput {
